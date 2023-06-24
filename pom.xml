@@ -10,6 +10,7 @@
     <module>chat-api-interfaces</module>
     <module>chat-api-application</module>
     <module>chat-api-infrastructure</module>
+    <module>chat-api-common</module>
   </modules>
 
 
