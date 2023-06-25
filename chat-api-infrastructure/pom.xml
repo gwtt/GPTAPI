@@ -9,7 +9,6 @@
 
     <groupId>cn.Jetty.api</groupId>
     <artifactId>chat-api-infrastructure</artifactId>
-    <packaging>jar</packaging>
 
     <name>chat-api-infrastructure</name>
     <url>http://maven.apache.org</url>
