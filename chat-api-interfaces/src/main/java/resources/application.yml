@@ -1,6 +1,19 @@
 server:
   port: 8090
+# 分组任务配置
 chatbot-api:
-  group:
-    groupId: 28885422524121
-    cookie: zsxq_access_token=2E71F15E-69D2-617E-7003-EC27A5AAD07F_FFB8DC9E37B400D9; zsxqsessionid=5ef37e82f796efadd411769182821b00; abtest_env=product; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22212544421142541%22%2C%22first_id%22%3A%22188d3bd2da9b74-0250a0b18cad55e-7e56547a-2073600-188d3bd2daafd6%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTg4ZDNiZDJkYTliNzQtMDI1MGEwYjE4Y2FkNTVlLTdlNTY1NDdhLTIwNzM2MDAtMTg4ZDNiZDJkYWFmZDYiLCIkaWRlbnRpdHlfbG9naW5faWQiOiIyMTI1NDQ0MjExNDI1NDEifQ%3D%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%24identity_login_id%22%2C%22value%22%3A%22212544421142541%22%7D%2C%22%24device_id%22%3A%22188d3bd2da9b74-0250a0b18cad55e-7e56547a-2073600-188d3bd2daafd6%22%7D;
+  launchList: group01,group02 # 启动几组，就配置几组
+  group01:
+    groupName: 组1
+    groupId: 28885518425541 # 知识星球ID
+    cookie:  # 知识星球个人cookie信息
+    openAiKey: aikey
+    cronExpression: 0/30 * * * * ?
+    silenced: false
+  group02:
+    groupName: 组2
+    groupId: 28885518425541 # 知识星球ID
+    cookie:  # 知识星球个人cookie信息
+    openAiKey: aikey
+    cronExpression: 0/30 * * * * ?
+    silenced: true
